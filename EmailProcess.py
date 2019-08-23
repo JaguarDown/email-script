@@ -8,7 +8,7 @@ import pprint
 import smtplib
 import sys
 
-class Email_process:
+class EmailProcess:
     imap_client = imapclient.IMAPClient("imap.mail.yahoo.com", ssl=True)
     uids = []
     user_email = ""
@@ -85,7 +85,7 @@ class Email_process:
         else:
             search_term = raw_input("Please enter a search term: ")
             try:
-                self.print_nnl("Searching" + search_flag + search_term)
+                self.print_nnl("Searching" + search_flag + search_term + "...")
                 self.uids = self.imap_client.search([search_flag, search_term])
             except self.imap_client.Error, e:
                 print "\nError searching for emails" + search_flag + search_term

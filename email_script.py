@@ -13,8 +13,8 @@ def main():
         print_menu()
         choice = raw_input("Enter your chioce [1-2]: ")
         if choice == "1":
-            ep = Email_process()
-            ep.run()
+            email_process = EmailProcess()
+            email_process.run()
         elif choice == "2":
             quit()
         else:
