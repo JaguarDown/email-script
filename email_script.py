@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from Email_process import Email_process
+from EmailProcess import EmailProcess
 
 def print_menu():
     print 30 * "-", "MENU", 30 * "-"
